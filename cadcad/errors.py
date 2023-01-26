@@ -74,8 +74,7 @@ class BlockInputError(Exception):
 
     def __init__(self, current_state, block) -> None:
         block_name = block._Block__function.__name__
-        self.message = f"Block {block_name} requires Point[{block.domain_names}] as input; you \
-            passed Point[{current_state.space.name()}]"
+        self.message = f"""Block {block_name} requires Point[{block.domain_names}] as input; you passed Point[{current_state.space.name()}]"""
 
         super().__init__(self.message)
 
