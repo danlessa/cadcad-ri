@@ -11,7 +11,7 @@ To set up a development environment:
 - Change to the `dev` branch
 - Create a new branch from `dev` (optional)
 - On the root of the repository, do `poetry install --no-root`
-- Don't forget to activate the virtual environment (the `.venv` folder) on your IDE
+- Activate the virtual environment (the `.venv` folder) on your IDE. This is typically done by passing `source .venv/bin/activate` on the terminal.
 
 After making your changes and writting the corresponding tests, run the following from the root of the repository:
 
